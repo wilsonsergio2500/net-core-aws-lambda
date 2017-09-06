@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dynamo.DAL", "Dynamo.DAL\Dynamo.DAL.csproj", "{C53D8C1D-14A4-4131-8AC0-5A85A5A73C8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dynamo.Models", "Dynamo.Models\Dynamo.Models.csproj", "{4AFF6D96-2246-46A5-8514-F07EB842F295}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{40E1CADE-52F6-4F4B-9B8D-381DFE71D0C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dynamo.DAL.TEST", "Dynamo.DAL.TEST\Dynamo.DAL.TEST.csproj", "{E6088F67-7FB9-418C-88DA-97FD72F91437}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoLambda", "DynamoLambda\DynamoLambda.csproj", "{CFE6B231-7D5B-4603-93B6-1E802AB210C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dynamo.TokenReader", "Dynamo.TokenReader\Dynamo.TokenReader.csproj", "{5706CDA5-C0FF-480C-8FF3-3DFCBFE4957F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dynamo.DI", "Dynamo.DI\Dynamo.DI.csproj", "{5B7C7E02-E17A-4030-AF18-6C7E959F3F92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoLambdaResponder", "DynamoLambdaResponder\DynamoLambdaResponder.csproj", "{E7BEBB10-A655-4709-9BC0-79E595DAFE71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C53D8C1D-14A4-4131-8AC0-5A85A5A73C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53D8C1D-14A4-4131-8AC0-5A85A5A73C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53D8C1D-14A4-4131-8AC0-5A85A5A73C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53D8C1D-14A4-4131-8AC0-5A85A5A73C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFF6D96-2246-46A5-8514-F07EB842F295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFF6D96-2246-46A5-8514-F07EB842F295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFF6D96-2246-46A5-8514-F07EB842F295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFF6D96-2246-46A5-8514-F07EB842F295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6088F67-7FB9-418C-88DA-97FD72F91437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6088F67-7FB9-418C-88DA-97FD72F91437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6088F67-7FB9-418C-88DA-97FD72F91437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6088F67-7FB9-418C-88DA-97FD72F91437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE6B231-7D5B-4603-93B6-1E802AB210C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE6B231-7D5B-4603-93B6-1E802AB210C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE6B231-7D5B-4603-93B6-1E802AB210C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE6B231-7D5B-4603-93B6-1E802AB210C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5706CDA5-C0FF-480C-8FF3-3DFCBFE4957F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5706CDA5-C0FF-480C-8FF3-3DFCBFE4957F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5706CDA5-C0FF-480C-8FF3-3DFCBFE4957F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5706CDA5-C0FF-480C-8FF3-3DFCBFE4957F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B7C7E02-E17A-4030-AF18-6C7E959F3F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B7C7E02-E17A-4030-AF18-6C7E959F3F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B7C7E02-E17A-4030-AF18-6C7E959F3F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B7C7E02-E17A-4030-AF18-6C7E959F3F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BEBB10-A655-4709-9BC0-79E595DAFE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BEBB10-A655-4709-9BC0-79E595DAFE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BEBB10-A655-4709-9BC0-79E595DAFE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BEBB10-A655-4709-9BC0-79E595DAFE71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6088F67-7FB9-418C-88DA-97FD72F91437} = {40E1CADE-52F6-4F4B-9B8D-381DFE71D0C0}
+	EndGlobalSection
+EndGlobal

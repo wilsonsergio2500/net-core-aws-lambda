@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dynamo.DAL\Dynamo.DAL.csproj" />
+    <ProjectReference Include="..\Dynamo.Models\Dynamo.Models.csproj" />
+    <ProjectReference Include="..\Dynamo.TokenReader\Dynamo.TokenReader.csproj" />
+  </ItemGroup>
+
+</Project>
