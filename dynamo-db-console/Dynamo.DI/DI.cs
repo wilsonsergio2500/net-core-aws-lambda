@@ -4,6 +4,7 @@ using Dynamo.DAL.Interfaces;
 using Dynamo.DAL.Repository;
 using Dynamo.Models;
 using Dynamo.Models.Configs;
+using Dynamo.SMS;
 using Dynamo.TokenReader;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -28,11 +29,18 @@ namespace Dynamo.DI
                 aws.awsSecret = Environment.GetEnvironmentVariable("awsSecret");
             };
 
+            Action<SmsConfig> IOptionSms = (SmsConfig smsconfig) =>
+            {
+                smsconfig.Key = Environment.GetEnvironmentVariable("smsKey");
+            };
+
 
             services.Configure<AwsConfig>(IOptionAction);
+            services.Configure<SmsConfig>(IOptionSms);
             services.AddSingleton<IDynamoClient, DynamoClient>();
             services.AddSingleton<IDynamoDb, DynamoDb>();
             services.AddSingleton<IBaseRepository<Message>, MessageRepository>();
+            services.AddSingleton<ISmsWorker, SmsWorker>();
 
 
             ServiceProvider = services.BuildServiceProvider();

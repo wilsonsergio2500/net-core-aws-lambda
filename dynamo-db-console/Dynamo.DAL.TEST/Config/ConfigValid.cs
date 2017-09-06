@@ -16,5 +16,11 @@ namespace Dynamo.DAL.TEST.Config
             IOptions<AwsConfig> config = sp.GetService<IOptions<AwsConfig>>();
             Assert.IsNotNull(config.Value);
         }
+        [TestMethod]
+        public void SmsConfigExist() {
+            IServiceProvider sp = StartUp.ServiceProvider;
+            IOptions<SmsConfig> config = sp.GetService<IOptions<SmsConfig>>();
+            Assert.IsNotNull(config.Value);
+        }
     }
 }

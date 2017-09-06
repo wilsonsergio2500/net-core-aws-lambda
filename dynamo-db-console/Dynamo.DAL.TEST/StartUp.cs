@@ -3,6 +3,7 @@ using Dynamo.DAL.Interfaces;
 using Dynamo.DAL.Repository;
 using Dynamo.Models;
 using Dynamo.Models.Configs;
+using Dynamo.SMS;
 using Dynamo.TokenReader;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -45,10 +46,12 @@ namespace Dynamo.DAL.TEST
             services.AddOptions();
 
             services.Configure<AwsConfig>(Configuration.GetSection("AwsConfig"));
+            services.Configure<SmsConfig>(Configuration.GetSection("SmsConfig"));
             services.AddScoped<IJwTokenReader, JwtTokenReader>();
             services.AddSingleton<IDynamoClient, DynamoClient>();
             services.AddSingleton<IDynamoDb, DynamoDb>();
             services.AddSingleton<IBaseRepository<Message>, MessageRepository>();
+            services.AddSingleton<ISmsWorker, SmsWorker>();
             
             
 
